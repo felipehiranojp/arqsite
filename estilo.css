@@ -1,0 +1,112 @@
+body{font-family: Arial, Helvetica, sans-serif;
+    background-color: #A6A198;
+}
+#rodape{
+    color: black;
+    background-color: #C1D4D9;
+    border: 3px solid #6F96A6 ;
+    border-radius: 10px;
+    height:auto;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+#botoes{
+    display: inline-table;
+    color: black;
+    background-color: #C1D4D9;
+    border: 3px solid #6F96A6 ;
+    border-radius: 10px;
+    text-align: center;
+    height: 20px;
+    text-align: center;
+    padding: 15px;
+    margin: 10px;
+}
+#botoes:hover{
+    background-color: #F2CA99 ;
+    border: 3px solid #735C48;
+    padding: 20px;
+
+}
+#caixa_ferramentas{
+    display: inline-block;
+    background-color: #C1D4D9;
+    border-radius: 10px;
+    height: 90px;
+}
+
+#janela1{
+    max-width:400px;
+    min-height: 100px;
+    border: 3px solid #6F96A6 ;
+    border-radius: 10px;
+    background-image: url(img/cozinha_pb.jpg);
+    
+}
+#janela1:hover{
+    background-image: url(img/cozinha.jpg);
+}
+
+#janela2{
+    max-width:400px;
+    min-height: 100px;
+    border: 3px solid #6F96A6 ;
+    border-radius: 10px;
+    background-image: url(img/saladeestar_pb.jpg);
+}
+#janela2:hover{
+    background-image: url(img/saladeestar.jpg);
+}
+
+
+#janela3{
+    max-width:400px;
+    min-height: 100px;
+    border: 3px solid #6F96A6 ;
+    border-radius: 10px;
+    background-image: url(img/sala_pb.jpg);
+}
+#janela3:hover{
+    background-image: url(img/sala.jpg);
+}
+
+
+#janela4{
+    max-width:400px;
+    min-height: 100px;
+    border: 3px solid #6F96A6 ;
+    border-radius: 10px;
+    background-image: url(img/salacozinha_pb.jpg);
+}
+#janela4:hover{
+    background-image: url(img/salacozinha.jpg);
+}
+#painel{
+    border: 3px solid #735C48;
+    display: inline-block;
+    
+    }
+#cards{
+    display: inline-block;
+    border: 3px solid #735C48;
+    padding: 5px;
+    margin: 5px;
+    width: 250px;
+    vertical-align: ;
+}
+#logo{
+display: inline-block;
+width: 275px;
+
+}
+
+#teste{
+    width: 200px;
+    height: 200px;
+    background-color: antiquewhite;
+    border: 3px solid black;
+    align-items: center;
+    display: inline-block;
+}
