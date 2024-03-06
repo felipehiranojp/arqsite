@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz-6</title>
+    <title>Quiz-7</title>
     <link rel="stylesheet" href="estilo.css">
     <script src="scripts.js"></script>
 </head>
@@ -15,7 +15,7 @@
         <a href="index.html"><div id="botoes">CS-Arq </div></a>
         <a href="index.html"><div id="botoes">Nossas Redes </div></a>
         </div>
-    <h3>Quais dessas combinações de cores te agrada mais? </h3>
+    <h3>Quais dessas personalidades mais te representam? </h3>
 
     <div id="painel">
     <div id="cards">
@@ -30,14 +30,14 @@
 
     <div id="cards">
         <input id="checkbox3" name="geral" type="checkbox"><br>
-        <label for="checkbox3"><img src="roupas/roupa_industrial.png" alt=""></label>
+        <label for="checkbox3"><img src="roupas/roupa_nordico.png" alt=""></label>
     </div>
 
     <br>    
 
     <div id="cards">
         <input id="checkbox4" name="geral" type="checkbox"><br>
-        <label for="checkbox4"><img src="roupas/roupa_minimalista.png" alt=""></label>
+        <label for="checkbox4"><img src="roupas/roupa_industrial.png" alt=""></label>
     </div>
 
     <div id="logo">
@@ -46,7 +46,7 @@
 
     <div id="cards">
         <input id="checkbox6" name="geral" type="checkbox"><br>
-        <label for="checkbox6"><img src="roupas/roupa_moderno.png" alt=""></label>
+        <label for="checkbox6"><img src="roupas/roupa_minimalista.png" alt=""></label>
         
     </div>
 
@@ -54,7 +54,7 @@
 
     <div id="cards">
         <input id="checkbox7" name="geral" type="checkbox"><br>
-        <label for="checkbox7"><img src="roupas/roupa_nordico.png" alt=""></label>
+        <label for="checkbox7"><img src="roupas/roupa_moderno.png" alt=""></label>
     </div>
 
     <div id="cards">
@@ -67,9 +67,13 @@
         <label for="checkbox9"><img src="roupas/roupa_vintage.png" alt=""></label>
     </div>
     <br>    
-    <input type="button" value="Enviar" id="botaoenviar" onclick="calcular()">
+    <input type="button" value="Próxima Pagina" id="botoes" onclick="calcular(8)">
+    <br>    
     <div id="teste"></div>
-    <a href="quiz8.html">Próxima Página></a>
+    <script>    
+        
+        var tela = document.getElementById('teste'); //escreve os valores das variaveis na tela de teste
+        tela.innerHTML=( 'campestre= '+sessionStorage.getItem("campestre")+'<br>Classica = '+ sessionStorage.getItem("classica")+'<br>Escandinavo = '+ sessionStorage.getItem("escandinavo")+'<br>Industrial = '+ sessionStorage.getItem("industrial")+'<br>Minimalista = '+ sessionStorage.getItem("minimalista")+'<br>Moderna = '+ sessionStorage.getItem("moderna")+'<br>Retro = '+ sessionStorage.getItem("retro")+'<br>Vintage = '+ sessionStorage.getItem("vintage"));</script>
 
 
     <footer>        

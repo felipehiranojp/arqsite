@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz-8</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="scripts.js"></script>
+</head>
+<body>
+    <div id="caixa_ferramentas">
+        <a href="index.html"><div id="botoes">Home </div></a>
+        <a href="quiz.html"><div id="botoes">Quiz </div></a>
+        <a href="index.html"><div id="botoes">Estilos </div></a>
+        <a href="index.html"><div id="botoes">CS-Arq </div></a>
+        <a href="index.html"><div id="botoes">Nossas Redes </div></a>
+        </div>
+    <h3>Seu perfil é: </h3>
+<div id="cards"></div>
+<br><br>
+
+<input type="button" value="Resposta" onclick="resposta()">
+<div id="cards2"></div>
+
+
+<script>    
+        
+    var tela = document.getElementById('cards'); //escreve os valores das variaveis na tela de teste
+    tela.innerHTML=( 'campestre= '+sessionStorage.getItem("campestre")+'<br>Classica = '+ sessionStorage.getItem("classica")+'<br>Escandinavo = '+ sessionStorage.getItem("escandinavo")+'<br>Industrial = '+ sessionStorage.getItem("industrial")+'<br>Minimalista = '+ sessionStorage.getItem("minimalista")+'<br>Moderna = '+ sessionStorage.getItem("moderna")+'<br>Retro = '+ sessionStorage.getItem("retro")+'<br>Vintage = '+ sessionStorage.getItem("vintage"));</script>
+    
+    
+
+    <footer>        
+        <div ><p id="rodape">Produzido por Didoki -</p></div>
+    </footer>
+</body>
+</html>

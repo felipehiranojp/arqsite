@@ -67,10 +67,11 @@
         <label for="checkbox9"><img src="sofas/sofa_vintage.jpg" alt=""></label>
     </div>
     <br>    
-    <input type="button" value="Enviar" id="botaoenviar" onclick="calcular()">
+    <input type="button" value="Próxima Pagina" id="botoes" onclick="calcular(6)">
+    <br>    
     <div id="teste"></div>
-    <a href="quiz6.html">Próxima Página></a>
-
+    <script>    var tela = document.getElementById('teste'); //escreve os valores das variaveis na tela de teste
+        tela.innerHTML=( 'campestre= '+sessionStorage.getItem("campestre")+'<br>Classica = '+ sessionStorage.getItem("classica")+'<br>Escandinavo = '+ sessionStorage.getItem("escandinavo")+'<br>Industrial = '+ sessionStorage.getItem("industrial")+'<br>Minimalista = '+ sessionStorage.getItem("minimalista")+'<br>Moderna = '+ sessionStorage.getItem("moderna")+'<br>Retro = '+ sessionStorage.getItem("retro")+'<br>Vintage = '+ sessionStorage.getItem("vintage"));</script>
 
     <footer>        
         <div ><p id="rodape">Produzido por Didoki -</p></div>

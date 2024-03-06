@@ -94,7 +94,16 @@ body{font-family: Arial, Helvetica, sans-serif;
     padding: 5px;
     margin: 5px;
     width: 250px;
-    vertical-align: ;
+    vertical-align:auto;
+}
+
+#cards2{
+    display: inline-block;
+    border: 3px solid #735C48;
+    padding: 5px;
+    margin: 5px;
+    width: 250px;
+    vertical-align:auto;
 }
 #logo{
 display: inline-block;
