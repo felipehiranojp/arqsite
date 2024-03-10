@@ -32,8 +32,9 @@
         <input id="checkbox3" name="geral" type="checkbox"><br>
         <label for="checkbox3"><img src="luminarias/escandinavo.jpg" alt=""></label>
     </div>
-
+</div>
     <br>    
+    <div id="painel">
 
     <div id="cards">
         <input id="checkbox4" name="geral" type="checkbox"><br>
@@ -49,9 +50,9 @@
         <label for="checkbox6"><img src="luminarias/minimalista.jpg" alt=""></label>
         
     </div>
-
+</div>
     <br>    
-
+<div id="painel">
     <div id="cards">
         <input id="checkbox7" name="geral" type="checkbox"><br>
         <label for="checkbox7"><img src="luminarias/moderno.jpg" alt=""></label>
@@ -66,12 +67,10 @@
         <input id="checkbox9" name="geral" type="checkbox"><br>
         <label for="checkbox9"><img src="luminarias/vintage.jpg" alt=""></label>
     </div>
+</div>
     <br>    
-    <input type="button" value="Próxima Pagina" id="botoes" onclick="calcular(4)">
-    <br>    
-    <div id="teste"></div>
-    <script>    var tela = document.getElementById('teste'); //escreve os valores das variaveis na tela de teste
-        tela.innerHTML=( 'campestre= '+sessionStorage.getItem("campestre")+'<br>Classica = '+ sessionStorage.getItem("classica")+'<br>Escandinavo = '+ sessionStorage.getItem("escandinavo")+'<br>Industrial = '+ sessionStorage.getItem("industrial")+'<br>Minimalista = '+ sessionStorage.getItem("minimalista")+'<br>Moderna = '+ sessionStorage.getItem("moderna")+'<br>Retro = '+ sessionStorage.getItem("retro")+'<br>Vintage = '+ sessionStorage.getItem("vintage"));</script>
+    <input type="button" value="Próxima Pagina" id="botaoProximo" onclick="calcular(4)">
+  
     
     <footer>        
         <div ><p id="rodape">Produzido por Didoki -</p></div>

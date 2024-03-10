@@ -39,6 +39,39 @@ function calcular(pagina){
     }
 
 function resposta(){
+
+campestreDescricao=['O estilo campestre, também conhecido como rústico, é inspirado na vida rural e na natureza. Ele incorpora elementos acolhedores e confortáveis, como madeira natural, tecidos leves e estampas florais. Móveis e acessórios geralmente possuem uma sensação de artesanato e nostalgia.'];
+
+campestreCaracteristica=['Madeira rústica, cores suaves e neutras, estampas florais, móveis antigos ou com aparência desgastada, elementos naturais (como pedra e plantas), tecidos naturais (linho, algodão).'];
+
+classicaDescricao= [' O estilo clássico é atemporal e elegante, inspirado nas antigas tradições europeias. Ele apresenta móveis refinados, detalhes ornamentados e uma atmosfera luxuosa. As cores são frequentemente neutras e suaves, com toques de cores mais ricas e vibrantes.'];
+
+classicaCaracteristica= ['Móveis de madeira escura ou dourada, tecidos ricos (veludo, seda), detalhes ornamentados (molduras, entalhes), cores neutras com toques de cores vivas, simetria e equilíbrio na disposição dos móveis.'];
+
+escandinavoDescricao=[' O estilo escandinavo é conhecido por sua simplicidade, funcionalidade e minimalismo. Ele valoriza a luz natural, espaços arejados e materiais naturais. Os ambientes escandinavos são caracterizados por linhas limpas, cores claras e uma sensação de serenidade.'];
+
+escandinavoCaracteristica= ['Madeira clara, tons neutros (branco, cinza, bege), móveis funcionais e de design simples, poucos acessórios decorativos, abundância de luz natural, texturas naturais (couro, lã).'];
+
+industrialDescricao= ['O estilo industrial tem suas raízes em espaços industriais convertidos em residências. Ele apresenta elementos como tijolos expostos, tubulações visíveis e materiais robustos como metal e concreto. A estética é urbana e moderna, com uma sensação de crueza e autenticidade.'];
+
+industrialCaracteristica=['Tijolos expostos, metal (ferro, aço), concreto, tubulações aparentes, móveis de estilo vintage ou retro, iluminação suspensa (luminárias industriais), paleta de cores neutras e escuras.'];
+
+minimalistaDescricao= ['O estilo minimalista foca na simplicidade, na limpeza e na redução ao essencial. Ele elimina o excesso de decoração e mantém apenas o necessário para criar espaços calmos e descomplicados. Os ambientes minimalistas são caracterizados por linhas simples, cores neutras e uma sensação de ordem.'];
+
+minimalistaCaracteristica= ['Móveis de linhas simples, espaços vazios e desobstruídos, cores neutras (branco, preto, cinza), materiais minimalistas (vidro, metal, plástico), poucos acessórios, iluminação suave e indireta.'];
+
+modernaDescricao= ['O estilo moderno é caracterizado pela inovação, pelo design contemporâneo e pela ênfase na funcionalidade. Ele incorpora materiais inovadores, formas geométricas e tecnologia avançada. Os ambientes modernos são limpos, elegantes e adaptáveis às necessidades dos ocupantes.'];
+
+modernaCaracteristica=['Móveis de design contemporâneo, formas geométricas simples, materiais modernos (vidro, metal, plástico), cores vivas e contrastantes, linhas limpas e definidas, tecnologia integrada à decoração.'];
+
+retroDescricao= ['O estilo retrô busca inspiração nas décadas passadas, especialmente nas décadas de 1950, 1960 e 1970. Ele apresenta elementos de design vintage, cores ousadas e estampas geométricas. Os ambientes retrô evocam uma sensação de nostalgia e diversão.'];
+
+retroCaracteristica= ['Móveis vintage ou inspirados em décadas passadas, cores vibrantes (laranja, amarelo, verde), estampas geométricas e psicodélicas, acessórios retro (telefones antigos, toca-discos), iluminação de estilo antigo.'];
+
+vintageDescricao=['O estilo vintage incorpora elementos de décadas passadas, mas de uma forma mais sutil e refinada do que o estilo retrô. Ele combina peças antigas ou de segunda mão com elementos contemporâneos para criar uma estética eclética e única. Os ambientes vintage são caracterizados por charme, personalidade e história.'];
+
+vintageCaracteristica= ['Peças antigas ou vintage, mistura de estilos e épocas, cores suaves e desbotadas, móveis restaurados, acessórios vintage (espelhos, quadros, relógios), elementos de época específicos (art déco, art nouveau, mid-century).'];
+
     var camp = parseInt(sessionStorage.getItem("campestre")); 
     var clas = parseInt(sessionStorage.getItem("classica")); 
     var esca = parseInt(sessionStorage.getItem("escandinavo"));
@@ -46,15 +79,85 @@ function resposta(){
     var mini = parseInt(sessionStorage.getItem("minimalista")); 
     var mode = parseInt(sessionStorage.getItem("moderna")); 
     var retr = parseInt(sessionStorage.getItem("retro"));
-    var vint = parseInt(sessionStorage.getItem("vintage")); 
-    var tela2 = document.getElementById("cards2");
-    var grupo = [camp,clas,esca,indu,mini,mode,retr,vint];
-    var maior =grupo[0]
-    for (i=1;i<=8;i++){
-        if(maior < grupo[i]){
-            maior = grupo[i]
-        }
-        tela2.innerHTML=('o maior é: '+ );
-       
-    }}
-    
+    var vint = parseInt(sessionStorage.getItem  ("vintage")); 
+
+    var grupo = [camp,clas,mini,mode,retr,vint,esca,indu];
+    var estilos = ['campestre','classico','minimalista','moderno','retro','vintage','escandinavo','industrial']
+    var escolhido =0
+    var maior =grupo[0];
+for (i=1;i<=8;i++){
+    if(maior < grupo[i]){
+        maior = grupo[i];
+        }}
+        grande=0;
+for (i=1;i<=8;i++){
+    if (grupo[i] == maior){
+        escolhido = i ;           
+}    
+}
+
+
+var desc = window.document.getElementById('descricao');
+var cards4 = window.document.getElementById('cards4');
+var cara = window.document.getElementById('caracteristicas');
+estiloEscolhido= toString(estilos[escolhido])
+
+
+
+if (String(estilos[escolhido]) == 'campestre'){
+    document.getElementById(perfil.innerHTML=(estilos[escolhido].toUpperCase()))
+    document.getElementById("cards3").innerHTML="<img src='escolha_final/escolha_camp1.jpg' width=90% >";
+    desc.innerHTML=(campestreDescricao);
+    document.getElementById("cards4").innerHTML="<img src='escolha_final/escolha_camp2.png' width=90% >";
+    cara.innerHTML=(campestreCaracteristica);
+    }
+if (String(estilos[escolhido]) == 'classico'){
+    document.getElementById(perfil.innerHTML=(estilos[escolhido].toUpperCase()))
+    document.getElementById("cards3").innerHTML="<img src='escolha_final/escolha_clas1.jpg' width=100% height: auto;>";
+    desc.innerHTML=(classicaDescricao);
+    document.getElementById("cards4").innerHTML="<img src='escolha_final/escolha_clas2.jpg' width=90% >";
+    cara.innerHTML=(classicaCaracteristica);
+} 
+if (String(estilos[escolhido]) == 'escandinavo'){
+    document.getElementById(perfil.innerHTML=(estilos[escolhido].toUpperCase()))
+    document.getElementById("cards3").innerHTML="<img src='escolha_final/escolha_esca1.jpg' width=100% height: auto;>";
+    desc.innerHTML=(escandinavoDescricao);
+    document.getElementById("cards4").innerHTML="<img src='escolha_final/escolha_esca2.png' width=90% >";
+    cara.innerHTML=(escandinavoCaracteristica);
+    } 
+if (String(estilos[escolhido]) == 'industrial'){
+    document.getElementById(perfil.innerHTML=(estilos[escolhido].toUpperCase()))
+    document.getElementById("cards3").innerHTML="<img src='escolha_final/escolha_indu1.png' width=100% height: auto;>";
+    desc.innerHTML=(industrialDescricao);
+    document.getElementById("cards4").innerHTML="<img src='escolha_final/escolha_indu2.jpg' width=90% >";
+    cara.innerHTML=(industrialCaracteristica);
+    } 
+if (String(estilos[escolhido]) == 'minimalista'){
+    document.getElementById(perfil.innerHTML=(estilos[escolhido].toUpperCase()))
+    document.getElementById("cards3").innerHTML="<img src='escolha_final/escolha_mini1.jpg' width=100% height: auto;>";
+    desc.innerHTML=(minimalistaDescricao);
+    document.getElementById("cards4").innerHTML="<img src='escolha_final/escolha_mini2.jpg' width=90% >";
+    cara.innerHTML=(minimalistaCaracteristica);
+    } 
+if (String(estilos[escolhido]) == 'moderno'){
+    document.getElementById(perfil.innerHTML=(estilos[escolhido].toUpperCase()))
+    document.getElementById("cards3").innerHTML="<img src='escolha_final/escolha_moderno1.jpg' width=100% height: auto;>";
+    desc.innerHTML=(modernaDescricao);
+    document.getElementById("cards4").innerHTML="<img src='escolha_final/escolha_moderno2.jpg' width=90% >";
+    cara.innerHTML=(modernaCaracteristica);
+    } 
+if (String(estilos[escolhido]) == 'retro'){
+    document.getElementById(perfil.innerHTML=('RETRÔ'));
+    document.getElementById("cards3").innerHTML="<img src='escolha_final/escolha_retro1.jpg' width=100% height: auto;>";
+    desc.innerHTML=(retroDescricao);
+    document.getElementById("cards4").innerHTML="<img src='escolha_final/escolha_retro2.jpg' width=90% >";
+    cara.innerHTML=(retroCaracteristica);
+    } 
+if (String(estilos[escolhido]) == 'vintage'){
+    document.getElementById(perfil.innerHTML=(estilos[escolhido].toUpperCase()))
+    document.getElementById("cards3").innerHTML="<img src='escolha_final/escolha_vintage2.jpg' width=100% height: auto;>";
+    desc.innerHTML=(vintageDescricao);
+    document.getElementById("cards4").innerHTML="<img src='escolha_final/escolha_vintage1.jpg' width=90% >";
+    cara.innerHTML=(vintageCaracteristica);
+    }
+}

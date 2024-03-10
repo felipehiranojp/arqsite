@@ -32,9 +32,9 @@
         <input id="checkbox3" name="geral" type="checkbox"><br>
         <label for="checkbox3"><img src="sofas/sofa_escandinavo.jpg" alt=""></label>
     </div>
-
+</div>
     <br>    
-
+    <div id="painel">
     <div id="cards">
         <input id="checkbox4" name="geral" type="checkbox"><br>
         <label for="checkbox4"><img src="sofas/sofa_industrial.jpg" alt=""></label>
@@ -47,14 +47,14 @@
     <div id="cards">
         <input id="checkbox6" name="geral" type="checkbox"><br>
         <label for="checkbox6"><img src="sofas/sofa_minimalista.jpg" alt=""></label>
-        
+</div>
     </div>
-
     <br>    
+<div id="painel">
 
     <div id="cards">
-        <input id="checkbox7" name="geral" type="checkbox"><br>
-        <label for="checkbox7"><img src="sofas/sofa_moderno.jpg" alt=""></label>
+    <input id="checkbox7" name="geral" type="checkbox"><br>
+    <label for="checkbox7"><img src="sofas/sofa_moderno.jpg" alt=""></label>
     </div>
 
     <div id="cards">
@@ -66,13 +66,10 @@
         <input id="checkbox9" name="geral" type="checkbox"><br>
         <label for="checkbox9"><img src="sofas/sofa_vintage.jpg" alt=""></label>
     </div>
+</div>
     <br>    
-    <input type="button" value="Próxima Pagina" id="botoes" onclick="calcular(6)">
-    <br>    
-    <div id="teste"></div>
-    <script>    var tela = document.getElementById('teste'); //escreve os valores das variaveis na tela de teste
-        tela.innerHTML=( 'campestre= '+sessionStorage.getItem("campestre")+'<br>Classica = '+ sessionStorage.getItem("classica")+'<br>Escandinavo = '+ sessionStorage.getItem("escandinavo")+'<br>Industrial = '+ sessionStorage.getItem("industrial")+'<br>Minimalista = '+ sessionStorage.getItem("minimalista")+'<br>Moderna = '+ sessionStorage.getItem("moderna")+'<br>Retro = '+ sessionStorage.getItem("retro")+'<br>Vintage = '+ sessionStorage.getItem("vintage"));</script>
-
+    <input type="button" value="Próxima Pagina" id="botaoProximo" onclick="calcular(6)">
+  
     <footer>        
         <div ><p id="rodape">Produzido por Didoki -</p></div>
     </footer>

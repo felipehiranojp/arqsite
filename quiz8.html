@@ -15,20 +15,71 @@
         <a href="index.html"><div id="botoes">CS-Arq </div></a>
         <a href="index.html"><div id="botoes">Nossas Redes </div></a>
         </div>
-    <h3>Seu perfil é: </h3>
-<div id="cards"></div>
-<br><br>
+    <h3>Qual desses hobbies, você mais se identifica? </h3>
 
-<input type="button" value="Resposta" onclick="resposta()">
-<div id="cards2"></div>
+    <div id="painel">
+    <div id="cards">
+        <input id="checkbox1" name="geral" type="checkbox">
+        <div id="legenda">Jardinagem</div>
+        <label for="checkbox1"><img src="hobbies/campestre.jfif" alt=""></label>
+    </div>
 
+    <div id="cards">
+        <input id="checkbox2" name="geral" type="checkbox">
+        <div id="legenda">Leitura</div>
+        <label for="checkbox2"><img src="hobbies/classico.jfif" alt=""></label>
+    </div>
 
-<script>    
-        
-    var tela = document.getElementById('cards'); //escreve os valores das variaveis na tela de teste
-    tela.innerHTML=( 'campestre= '+sessionStorage.getItem("campestre")+'<br>Classica = '+ sessionStorage.getItem("classica")+'<br>Escandinavo = '+ sessionStorage.getItem("escandinavo")+'<br>Industrial = '+ sessionStorage.getItem("industrial")+'<br>Minimalista = '+ sessionStorage.getItem("minimalista")+'<br>Moderna = '+ sessionStorage.getItem("moderna")+'<br>Retro = '+ sessionStorage.getItem("retro")+'<br>Vintage = '+ sessionStorage.getItem("vintage"));</script>
-    
-    
+    <div id="cards">
+        <input id="checkbox3" name="geral" type="checkbox">
+        <div id="legenda">Cozinhar</div>
+        <label for="checkbox3"><img src="hobbies/escandinavo.jfif" alt=""></label>
+    </div>
+</div>
+    <br>    
+    <div id="painel">
+
+        <div id="cards">
+        <input id="checkbox4" name="geral" type="checkbox">
+        <div id="legenda">Fotografia</div>
+        <label for="checkbox4"><img src="hobbies/industrial.jfif" alt=""></label>
+    </div>
+
+    <div id="logo">
+        <label for="checkbox5"><img src="img/cs-arq_logo.png" style="margin-left: 10px;" alt="" ></label>
+    </div>
+
+    <div id="cards">
+        <input id="checkbox6" name="geral" type="checkbox">
+        <div id="legenda">Meditação</div>
+        <label for="checkbox6"><img src="hobbies/minimalista.jfif" alt=""></label>
+    </div>
+</div>
+    <br>    
+<div id="painel">
+
+    <div id="cards">
+        <input id="checkbox7" name="geral" type="checkbox">
+        <div id="legenda">Jogos Eletrônicos</div>
+        <label for="checkbox7"><img src="hobbies/moderno.jfif" alt=""></label>
+    </div>
+
+    <div id="cards">
+        <input id="checkbox8" name="geral" type="checkbox">
+        <div id="legenda">Discos de Vinil</div>
+        <label for="checkbox8"><img src="hobbies/retro.jfif" alt=""> 
+        </label>
+    </div>
+
+    <div id="cards">
+        <input id="checkbox9" name="geral" type="checkbox" >
+        <div id="legenda">Visitar museus</div>
+        <label for="checkbox9"><img src="hobbies/vintage.jfif" alt="">
+    </div>
+</div>
+    <br>    
+    <input type="button" value="Próxima Pagina" id="botaoProximo" onclick="calcular(9)">
+   
 
     <footer>        
         <div ><p id="rodape">Produzido por Didoki -</p></div>

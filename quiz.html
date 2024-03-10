@@ -6,6 +6,14 @@
     <title>Quiz-1</title>
     <link rel="stylesheet" href="estilo.css">
     <script src="scripts.js"></script>
+    <script>    sessionStorage.setItem("campestre", 0);// cria as variavei sessionStorage
+        sessionStorage.setItem("classica", 0);
+        sessionStorage.setItem("escandinavo", 0);
+        sessionStorage.setItem("industrial", 0);
+        sessionStorage.setItem("minimalista", 0);
+        sessionStorage.setItem("moderna", 0);
+        sessionStorage.setItem("retro", 0);
+        sessionStorage.setItem("vintage", 0);</script>
 </head>
 <body>
     <div id="caixa_ferramentas">
@@ -15,14 +23,14 @@
         <a href="index.html"><div id="botoes">CS-Arq </div></a>
         <a href="index.html"><div id="botoes">Nossas Redes </div></a>
         </div>
-    <h3>Selecione todos os ambientes que você mais gostou </h3>
+        <h3>Selecione todos os ambientes que você mais gostou </h3>
 
     <div id="painel">
     <div id="cards">
         <input id="checkbox1" name="geral" type="checkbox"><br>
         <label for="checkbox1"><img src="geral/campestre.jpg" alt=""></label>
     </div>
-
+    
     <div id="cards">
         <input id="checkbox2" name="geral" type="checkbox"><br>
         <label for="checkbox2"><img src="geral/classico.jpg" alt=""></label>
@@ -32,8 +40,9 @@
         <input id="checkbox3" name="geral" type="checkbox"><br>
         <label for="checkbox3"><img src="geral/escandinavo.jpg" alt=""></label>
     </div>
-
+</div>
     <br>    
+    <div id="painel">
 
     <div id="cards">
         <input id="checkbox4" name="geral" type="checkbox"><br>
@@ -49,8 +58,10 @@
         <label for="checkbox6"><img src="geral/minimalista.jpg" alt=""></label>
         
     </div>
+</div>
 
     <br>    
+<div id="painel">
 
     <div id="cards">
         <input id="checkbox7" name="geral" type="checkbox"><br>
@@ -66,10 +77,12 @@
         <input id="checkbox9" name="geral" type="checkbox"><br>
         <label for="checkbox9"><img src="geral/vintage.jpg" alt=""></label>
     </div>
+</div>
+
     <br>    
-    <input type="button" value="Próxima Pagina" id="botoes" onclick="calcular(2)">
-    <br>    
-    <div id="teste"></div>
+
+    <input type="button" value="Próxima Pagina" id="botaoProximo" onclick="calcular(2)">
+
 
 
 <footer>        
