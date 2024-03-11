@@ -92,6 +92,7 @@ h3{
     border-radius: 10px;
     height: 90px;
     box-shadow: 1px 2px 3px 2px gray;
+    padding: 20px;
 }
 
 #janela1{
@@ -269,6 +270,17 @@ width: 275px;
 
     background-color: #F2CA99;
 }
+#logotipo{
+
+    background-image: url(img/logo_nome_preto.png);
+    width: 230px;
+    height: 100px;
+}
+#logotipo:hover{
+
+    background-image: url(img/logo_nome_azul.png);
+
+}
 
 #painelIndex{
     display:inline-block;
@@ -277,8 +289,10 @@ width: 275px;
     place-items: center;
     width: 700px;
     margin: auto;
-    border:#6F96A6 solid 10px;
+
     border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px  gray;
+    padding: 10px 10px 40px 10px ;
 
 }
 #painelEstilos{
@@ -290,5 +304,6 @@ width: 275px;
     border-radius: 10px;
     padding: auto;
     width: 60%;
+    margin: 10px;
 
 }
