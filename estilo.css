@@ -83,13 +83,15 @@ h3{
 #perfil:hover{
     background-color: #F2CA99 ;
     border: 3px solid #735C48;
-    padding: 20px;}
+    padding: 20px;
+}
 #caixa_ferramentas{
     display: flex;
     justify-content: center;
-    background-color: #C1D4D9;
+    background-color: ffffff;
     border-radius: 10px;
     height: 90px;
+    box-shadow: 1px 2px 3px 2px gray;
 }
 
 #janela1{
@@ -144,6 +146,7 @@ h3{
 }
 #painel{
     display: flex;
+    vertical-align: bottom;
     justify-content: center;
     font-family:'Times New Roman', Times, serif;
     font-size: 30px;
@@ -177,8 +180,9 @@ h3{
 }
 
 #cards3{
-    display:block;
+    display:flex;
     margin: auto;
+    justify-content: center;
     border: 3px solid #735C48;
     padding: 5px;
     width: 700px;
@@ -220,7 +224,8 @@ h3{
 
 }
 #logo{
-display: inline-block;
+display: grid;
+place-items: center;
 width: 275px;
 
 }
@@ -266,9 +271,24 @@ width: 275px;
 }
 
 #painelIndex{
-    display:flexbox;
+    display:inline-block;
     justify-content: center;
+    display: grid;
+    place-items: center;
+    width: 700px;
+    margin: auto;
     border:#6F96A6 solid 10px;
     border-radius: 10px;
+
+}
+#painelEstilos{
+
+    display: grid;
+    place-items: center;    
+    
+    box-shadow: 2px 2px 2px 2px #919191;
+    border-radius: 10px;
+    padding: auto;
+    width: 60%;
 
 }

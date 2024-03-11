@@ -79,7 +79,7 @@ vintageCaracteristica= ['Peças antigas ou vintage, mistura de estilos e épocas
     var mini = parseInt(sessionStorage.getItem("minimalista")); 
     var mode = parseInt(sessionStorage.getItem("moderna")); 
     var retr = parseInt(sessionStorage.getItem("retro"));
-    var vint = parseInt(sessionStorage.getItem  ("vintage")); 
+    var vint = parseInt(sessionStorage.getItem("vintage")); 
 
     var grupo = [camp,clas,mini,mode,retr,vint,esca,indu];
     var estilos = ['campestre','classico','minimalista','moderno','retro','vintage','escandinavo','industrial']
