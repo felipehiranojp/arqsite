@@ -298,11 +298,10 @@ width: 275px;
 #painelEstilos{
 
     display: grid;
-    place-items: center;    
+    place-items: center;
     
     box-shadow: 2px 2px 2px 2px #919191;
     border-radius: 10px;
-    padding: auto;
     width: 60%;
     margin: 10px;
 
