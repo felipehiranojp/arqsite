@@ -101,11 +101,11 @@ h3{
     height: 200px;
     border: 3px solid #6F96A6 ;
     border-radius: 10px;
-    background-image: url(img/botao1pb.jpg);
+    background-image: url(img/costaazulpb.jpg);
     
 }
 #janela1:hover{
-    background-image: url(img/botao1.jpg);
+    background-image: url(img/costaAzul.PNG);
 }
 
 #janela2{
@@ -114,10 +114,10 @@ h3{
     height: 200px;
     border: 3px solid #6F96A6 ;
     border-radius: 10px;
-    background-image: url(img/botao2pb.jpg);
+    background-image: url(img/davincipb.jpg)
 }
 #janela2:hover{
-    background-image: url(img/botao2.jpg);
+    background-image: url(img/davinci.png);
 }
 
 
@@ -127,10 +127,10 @@ h3{
     height: 200px;
     border: 3px solid #6F96A6 ;
     border-radius: 10px;
-    background-image: url(img/botao3pb.jpg);
+    background-image: url(img/lencoispb.jpg);
 }
 #janela3:hover{
-    background-image: url(img/botao3.jpg);
+    background-image: url(img/lencois.png);
 }
 
 
@@ -140,10 +140,10 @@ h3{
     height: 200px;
     border: 3px solid #6F96A6 ;
     border-radius: 10px;
-    background-image: url(img/botao4pb.jpg);
+    background-image: url(img/monsenhorpb.jpg);
 }
 #janela4:hover{
-    background-image: url(img/botao4.jpg);
+    background-image: url(img/monsenhor.png);
 }
 #painel{
     display: flex;
