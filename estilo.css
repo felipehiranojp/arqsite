@@ -306,3 +306,7 @@ width: 275px;
     margin: 10px;
 
 }
+#cards5{
+display:inline;
+justify-content: center;
+}
