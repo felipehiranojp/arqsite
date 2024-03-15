@@ -1,3 +1,5 @@
+
+
 function calcular(pagina){
     //mudar para a página seguinte
     window.location="quiz"+pagina+".html"

@@ -310,3 +310,8 @@ width: 275px;
 display:inline;
 justify-content: center;
 }
+#quadro{
+    width: 300px;
+    height: 100px;
+    border: #6F96A6 solid 3px;
+}
