@@ -88,16 +88,22 @@ h3{
 #caixa_ferramentas{
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    
+    
     background-color: ffffff;
     border-radius: 10px;
-    height: 90px;
+    height: auto;
     box-shadow: 1px 2px 3px 2px gray;
     padding: 20px;
 }
 
 #janela1{
-    display: inline-block;
-    width:500px;
+    display: flex;
+    width: 300pc;
+    max-width:500px;
     height: 200px;
     border: 3px solid #6F96A6 ;
     border-radius: 10px;
@@ -287,7 +293,7 @@ width: 275px;
     justify-content: center;
     display: grid;
     place-items: center;
-    width: 700px;
+    width: 80%;
     margin: auto;
 
     border-radius: 10px;
