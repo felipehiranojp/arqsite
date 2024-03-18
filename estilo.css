@@ -8,7 +8,14 @@ a{
     justify-content: center;
 }
 
+img{
+    width: auto;
+}
+
 #rodape{
+    
+    margin: auto;
+    width: 50%;
     color: black;
     background-color: #C1D4D9;
     border: 3px solid #6F96A6 ;
@@ -153,6 +160,9 @@ h3{
 }
 #painel{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     vertical-align: bottom;
     justify-content: center;
     font-family:'Times New Roman', Times, serif;
@@ -289,7 +299,8 @@ width: 275px;
 }
 
 #painelIndex{
-    display:inline-block;
+    display: flex;
+    margin: auto;
     justify-content: center;
     display: grid;
     place-items: center;
