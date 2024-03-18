@@ -10,7 +10,8 @@ a{
 
 img{
     display: flex;
-    width: auto;
+    width: 100%;
+    max-width: fit-content;
     margin: auto;
     justify-content: center;
     box-shadow: 3px 3px 3px 3px gray;
@@ -206,7 +207,8 @@ h3{
     justify-content: center;
     border: 3px solid #735C48;
     padding: 5px;
-    width: 700px;
+    width: auto;
+    max-width: 800px;
     border-radius: 10px;
 }
 
@@ -309,7 +311,7 @@ width: 275px;
     justify-content: center;
     flex-wrap: wrap;
     place-items: center;
-    width: 80%;
+    width: auto;
     border-radius: 10px;
     box-shadow: 2px 2px 2px 2px  gray;
     padding: 10px 10px 40px 10px ;
