@@ -358,6 +358,12 @@ justify-content: center;
     display: flex;
     justify-content: center;
 
-
-
+}
+#formu{
+ border: #6F96A6 3px solid;
+ border-radius: 10px;
+ max-width: 300px;
+ margin: auto;
+ padding: 0px 0px 10px 0px ;
+    
 }
