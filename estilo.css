@@ -347,3 +347,11 @@ justify-content: center;
     margin: auto;
     padding: 10px 10px 40px 10px ;
 }
+
+#email{
+    font-size: 30px;
+    color: #6F96A6;
+    text-decoration: none;
+    
+    
+}
