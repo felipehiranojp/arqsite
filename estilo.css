@@ -247,9 +247,10 @@ h3{
 
 }
 #logo{
-display: grid;
-place-items: center;
-width: 275px;
+
+    display: grid;
+    width: 275px;
+;
 
 }
 
@@ -365,5 +366,17 @@ justify-content: center;
  max-width: 300px;
  margin: auto;
  padding: 0px 0px 10px 0px ;
-    
+}    
+
+#logoInsta{
+    border-radius: 1-px;
+    background-image: url(img/logoInsta_pb.png);
+    width: 200px;
+    height: 200px;
+    margin: auto;
+}
+
+#logoInsta:hover{
+    border-radius: 1-px;
+    background-image: url(img/logoInstagram.png);
 }
